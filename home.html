@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>TGIF Home</title>
+      <meta charset="utf-8">
+      <!--bootstrap v4.3.1 viewport and stylesheet-->
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      
+      <!--font awesome v5.8.1 (icons)-->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+      
+      <!--my css- created in another file named main.css-->
+      <link href="main.css" rel="stylesheet" type="text/css"/>
+    </head>
+    
+    <body>
+      <div class="container">
+        <!--first row (bootstrap): logo + page name + email logo + email-->
+        <div class="row"> 
+          <!--icon-->
+          <div class="col-1 pt-4 fa-stack fa">
+            <i class="chart-bar far fa-chart-bar fa-stack-1x"></i>
+            <i class="fas fa-search fa-3x fa-stack-2x "></i>
+          </div>
+          <!--logo-->
+          <div class="col-8 pt-3">
+            <img src="tgif-logo.png" alt="tgif logo">
+          </div>
+          <!--email logo-->
+          <div class="col-1 pt-4 text-right p-0"> 
+            <i class="far fa-envelope"></i>
+          </div>
+          <!--email-->
+          <div class="col-2 pt-4">
+            <a href="mailto:info@tgif.net"><u>info@tgif.net</u></a>
+          </div>
+        </div>
+
+       <!--second row (bootstrap): navbar-->
+       <div class="row"> 
+        <div class="col">
+          <!--navbar general design-->
+          <nav class="navbar navbar-expand navbar-light bg-light border border-secondary">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <!--home-->
+                <li class="nav-item active">
+                  <a class="nav-link text-primary" href="home.html">Home</a> 
+                </li>
+                <!--dropdown menu-->
+                <li class="nav-item dropdown"> 
+                  <!--congress 113-->
+                  <a class="pt-2 nav-link dropdown-toggle" href="#" id="navbarNavDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Congress 113<span class="caret"></span></a>
+                  <div class="dropdown-menu" aria-labelledby="navbarNavDropdownMenuLink">
+                    <!--senate-->
+                    <a class="dropdown-item nav-item" href="senate-data.html">Senate</a> 
+                    <!--house-->
+                    <a class="dropdown-item" href="house-data.html">House</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown"> 
+                    <!--attendance-->
+                    <a class="pt-2 nav-link dropdown-toggle" href="#" id="navbarNavDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Attendance<span class="caret"></span></a>
+                    <div class="dropdown-menu" aria-labelledby="navbarNavDropdownMenuLink">
+                      <!--senate attendance-->
+                      <a class="dropdown-item nav-item" href="senate-attendance.html">Senate</a> 
+                      <!--house attendance-->
+                      <a class="dropdown-item" href="house-attendance.html">House</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown"> 
+                    <!--party loyalty-->
+                    <a class="pt-2 nav-link dropdown-toggle" href="#" id="navbarNavDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Party Loyalty<span class="caret"></span></a>
+                    <div class="dropdown-menu" aria-labelledby="navbarNavDropdownMenuLink">
+                      <!--senate party loyalty-->
+                      <a class="dropdown-item nav-item" href="senate-loyalty.html">Senate</a> 
+                      <!--house party loyalty-->
+                      <a class="dropdown-item" href="house-loyalty.html">House</a>
+                    </div>
+                  </li>
+                </ul>
+            </div>
+          </nav>        
+        </div>
+      </div><br/><br/><br/><br/>
+
+        <!--third row (bootstrap): about us button + text + home page image-->
+        <div class="row">
+          <div class="col-9">
+            <div class="accordion" id="accordionHome">
+              <div class="card">
+                <div class="card-header" id="headingAboutUs">
+                  <!--button about us-->
+                  <h2 class="mb-0">
+                    <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#collapseAboutUs" aria-expanded="false" aria-controls="collapseABoutUs">
+                      About us >
+                    </button>
+                  </h2>
+                </div>
+                <!--text about us-->
+                <div id="collapseAboutUs" class="collapse" aria-labelledby="headingAboutUS" data-parent="#accordionHome">
+                  <div class="card-body">
+              Openness, accountability, and honesty define government transparency. In a free society, 
+          transparency is government's obligation to share information with citizens.It is at the heart
+          of how citizens hold their public officials accountable. Here at TGIF we believe that government
+          should be transparent. Governments exist to serve the people. Information on how officials
+          conduct the public business and spend taxpayer money must be readily available and easily understood.
+          This transparency allows good and just governance. Transparency promotes accountability and 
+          provides information for citizens about what their Government is doing.
+              We also believe that government should be participatory. Public engagement enhances the 
+          Government's effectiveness and improves the quality of its decisions. Knowledge is widely
+          dispersed in society, and public officials benefit from having access to that dispersed knowledge.
+          We invite you to use our site to become actively engaged in American government.
+              TGIF works to disclose information in forms that the public can readily find and use. We
+          solicit public feedback to identify information of greatest use to the public.  
+              First convened in 1789, the composition and powers of the Senate are established in Article
+          One of the U.S. Constitution. Each state is represented by two senators, regardless of population,
+          who serve staggered six-year terms.The Senate has several exclusive powers not granted to the House,
+          including consenting to treaties as a precondition to their ratification and consenting to or
+          confirming appointments of Cabinet secretaries, federal judges, other federal executive officials,
+          military officers, regulatory officials, ambassadors, and other federal uniformed officers, as
+          well as trial of federal officials impeached by the House.
+                  </div>
+                </div>     
+              </div>
+              <!--button background history-->
+              <div class="card">
+                <div class="card-header" id="headingBackgroundHistory">
+                  <h2 class="mb-0">
+                    <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#collapseBackgroundHistory" aria-expanded="false" aria-controls="collapseBackgroundHistory">
+                        Background History of Government Transparency >
+                    </button>
+                  </h2>
+                </div>
+                <!--text background history-->
+                <div id="collapseBackgroundHistory" class="collapse" aria-labelledby="headingBackgroundHistory" data-parent="#accordionHome">
+                  <div class="card-body">
+                        In the West, the idea that government should be open to public scrutiny and susceptible 
+                    to public opinion dates back at least to the time of the Enlightenment, when many philosophes
+                    made an attack on absolutist doctrine of state secrecy, a core part of their intellectual project.
+                    The passage of formal legislative instruments to this end can also be traced to this time with
+                    Sweden, for example, (which then included Finland as a Swedish-governed territory) enacting
+                    free press legislation as part of its constitution (Freedom of the Press Act, 1766). This approach,
+                    and that of the philosophes more broadly, is strongly related to recent historiography on the
+                    eighteenth-century public sphere.
+
+                        Influenced by Enlightenment thought, the revolutions in America (1776) and France (1789),
+                    freedom of the press enshrined provisions and requirements for public budgetary accounting
+                    andfreedom of the press in constitutional articles. In the nineteenth century, attempts by
+                    Metternichean statesmen to row back on these measures were vigorously opposed by a number
+                    of eminent liberal politicians and writers, Bentham, Mill and Acton prominent among the latter.
+
+                        Open government is widely seen to be a key hallmark of contemporary democratic practice
+                    and is often linked to the passing of freedom of information legislation. Scandinavian countries
+                    claim to have adopted the first freedom of information legislation, dating the origins of its
+                    modern provisions to the eighteenth century and Finland continuing the presumption of openness
+                    after gaining independence in 1917, passing its Act on Publicity of Official Documents in 1951
+                    (superseded by new legislation in 1999).
+                        The United States passed its Freedom of Information Act (FOIA) in 1966, FOIAs, 
+                    Access to Information Acts (AIAs) or equivalent laws were passed in Denmark and Norway in 1970.
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div>
+
+          <!--home page image (still third row)-->
+          <div class="col=3">
+            <img src="tgif-data-image.png" class="rounded" alt="computer with data and statistics">
+          </div>
+      </div>
+         
+
+        <!--fourth row (bootstrap): footer-->
+          <footer>
+            <div class="row card-footer bg-light border border-secondary  pt-4 mb-2"> 
+              <div class="col">
+                <p class="text-center">&copy; 2&Oslash;16 TGIF &#124; All Rights Reserved</p>
+              </div> 
+            </div>
+          </footer>
+     </div>
+  
+<!--bootstrap version 4.3.1-->
+    <!-- jQuery library --> 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled JavaScript --> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+  </body>
+</html>

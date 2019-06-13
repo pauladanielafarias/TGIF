@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>TGIF Senators</title>
+      <meta charset="utf-8">
+      <!--bootstrap v.4.3.1 viewport and stylesheet-->
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      
+      <!--font awesome v5.8.1 (icons)-->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+      
+      <!--my css created in another file named main.css-->
+      <link href="main.css" rel="stylesheet" type="text/css"/>
+    </head>
+    
+    <body id="house">
+      <div class="container" id="app">
+        <!--first row (bootstrap): icon + logo + email logo + email-->
+        <div class="row"> 
+         <!--icon-->
+         <div class="col-1 pt-4 fa-stack fa">
+            <i class="chart-bar far fa-chart-bar fa-stack-1x"></i>
+            <i class="fas fa-search fa-3x fa-stack-2x "></i>
+          </div>
+          <!--logo-->
+          <div class="col-8 pt-3">
+            <img src="tgif-logo.png" alt="tgif logo">
+          </div>
+          <!--email logo-->
+          <div class="col-1 pt-4 text-right p-0"> 
+            <i class="far fa-envelope"></i>
+          </div>
+          <!--email-->
+          <div class="col-2 pt-4">
+            <a href="mailto:info@tgif.net"><u>info@tgif.net</u></a>
+          </div>
+        </div>
+
+        <!--second row (bootstrap): navbar-->
+          <div class="row"> 
+            <div class="col">
+              <!--navbar general design-->
+              <nav class="navbar navbar-expand navbar-light bg-light border border-secondary">
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <!--home-->
+                    <li class="nav-item">
+                      <a class="nav-link" href="home.html">Home</a> 
+                    </li>
+                    <!--dropdown menu-->
+                    <li class="nav-item dropdown"> 
+                      <!--congress 113-->
+                      <a class="pt-2 nav-link dropdown-toggle" href="#" id="navbarNavDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Congress 113<span class="caret"></span></a>
+                      <div class="dropdown-menu" aria-labelledby="navbarNavDropdownMenuLink">
+                        <!--senate-->
+                        <a class="dropdown-item nav-item" href="senate-data.html">Senate</a> 
+                        <!--house-->
+                        <a class="dropdown-item" href="house-data.html">House</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown"> 
+                        <!--attendance-->
+                        <a class="pt-2 nav-link dropdown-toggle text-primary" href="#" id="navbarNavDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Attendance<span class="caret"></span></a>
+                        <div class="dropdown-menu" aria-labelledby="navbarNavDropdownMenuLink">
+                          <!--senate attendance-->
+                          <a class="dropdown-item nav-item" href="senate-attendance.html">Senate</a> 
+                          <!--house attendance-->
+                          <a class="dropdown-item nav-item active" href="house-attendance.html">House</a>
+                        </div>
+                      </li>
+                      <li class="nav-item dropdown"> 
+                        <!--party loyalty-->
+                        <a class="pt-2 nav-link dropdown-toggle" href="#" id="navbarNavDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Party Loyalty<span class="caret"></span></a>
+                        <div class="dropdown-menu" aria-labelledby="navbarNavDropdownMenuLink">
+                          <!--senate party loyalty-->
+                          <a class="dropdown-item nav-item" href="senate-loyalty.html">Senate</a> 
+                          <!--house party loyalty-->
+                          <a class="dropdown-item" href="house-loyalty.html">House</a>
+                        </div>
+                      </li>
+                    </ul>
+                </div>
+              </nav>        
+            </div>
+          </div><br/><br/><br/><br/>
+
+        <!--third row (bootstrap): text + house at a glance table-->
+        <div class="row">
+            <!--text attendance-->
+            <div class="col">
+              <h2>Attendance</h2>
+              <pre>
+    The Constitution specifies that a majority of members
+  constitutes a quorum to do business in each house. 
+  Representatives and senators rarely force the presence
+  of a quorum by demanding quorum calls; thus, in most cases,
+  debates continue even if a majority is not present.
+    The Senate uses roll-call votes; a clerk calls out the
+  names of all the senators, each senator stating "aye" or
+  "no" when his or her name is announced. The House reserves
+  roll-call votes for the most formal matters, as a roll-call
+  of all 435 representatives takes quite some time; normally,
+  members vote by electronic device. In the case of a tie, 
+  the motion in question fails. In the Senate, the Vice
+  President may (if present) cast the tiebreaking vote.
+              </pre>
+            </div>
+             <!--house at a glance table-->
+          <div class="col">
+            <h3>House at a glance</h3>
+            <table id="senate-glance"class="table"> 
+              <thead>
+                <th>Party</th>
+                <th>No. of Reps.</th>
+                <th>% Voted with Party</th>
+              </thead>
+              <tbody>
+                <!--democrats row-->
+                <tr>
+                  <td>Democrats</td>
+                  <td>{{numDem()}} </td>
+                  <td>{{percDem()}}%</td>
+                </tr>
+                <!--republicans row-->
+                <tr>
+                  <td>Republicans</td>
+                  <td>{{numRep()}}</td>
+                  <td>{{percRep()}}%</td>
+                </tr>
+                <!--independents row-->
+                <tr>
+                  <td>Independents</td>
+                  <td>{{numIndep()}}</td>
+                  <td>{{percIndep()}}%</td>
+                </tr>
+                <!--total row-->
+                <tr>
+                  <td>Total</td>
+                  <td>{{totalReps()}}</td>
+                  <td>{{totalPerc()}}%</td>
+                </tr>
+              </tbody>   
+            </table>
+
+            </div>
+          </div><br/><br/>
+  
+  
+          <!--fourth row (bootstrap): least engaged and most engaged tables-->
+        <div class="row">
+          <!--least engaged table-->
+          <div class="col">
+            <h3>Least Engaged (Bottom 10% Attendance)</h3>
+            <table class="table">
+              <thead>
+                <th>Name</th>
+                <th>No. Missed Votes</th>
+                <th>% Missed</th>
+              </thead>
+              <tbody>
+                <tr v-for="member in getTenPct('down','missed_votes_pct')">
+                  <td> <a :href="member.url">{{member.first_name}} {{member.middle_name}} {{member.last_name}}</a></td>
+                  <td>{{member.missed_votes}}</td>
+                  <td>{{member.missed_votes_pct}}%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!--most engaged table-->
+          <div class="col">
+            <h3>Most Engaged (Top 10% Attendance)</h3>
+            <table class="table">
+              <thead>
+                <th>Name</th>
+                <th>No. Missed Votes</th>
+                <th>% Missed</th>
+              </thead>
+              <tbody> <tr v-for="member in getTenPct('up','missed_votes_pct')">
+                  <td> <a :href="member.url">{{member.first_name}} {{member.middle_name}} {{member.last_name}}</a></td>
+                  <td>{{member.missed_votes}}</td>
+                  <td>{{member.missed_votes_pct}}%</td>
+                </tr>
+              </tbody> 
+            </table>
+          </div>
+        </div>
+        
+
+        <!--fifth row (bootstrap): footer-->
+          <footer>
+            <div class="row card-footer bg-light border border-secondary  pt-4 mb-2"> 
+              <div class="col">
+                <p class="text-center">&copy; 2&Oslash;16 TGIF &#124; All Rights Reserved</p>
+              </div> 
+            </div>
+          </footer>
+      </div>
+ 
+  <!-- Vue.js development version, includes helpful console warnings -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  
+  <!--bootstrap version 4.3.1-->
+    <!-- jQuery library --> 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled JavaScript --> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <!-- json with congress house members: <script src="pro-congress-113-house.js"></script> 
+    and main.js-->    
+    <script src="main.js"></script> 
+
+  </body>
+</html>
