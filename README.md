@@ -20,7 +20,10 @@
     
 - **API:** ProPublica Congress API
 
-- **Not deployed yet** 
+- **Deployed** on GitHub Pages.
+
+- **Link:** [TGIF](https://pauladanielafarias.github.io/TGIF/)
+
 
 #### :woman_technologist: **Developer:** [Paula Farias](https://linkedin.com/in/paulafarias)
 
